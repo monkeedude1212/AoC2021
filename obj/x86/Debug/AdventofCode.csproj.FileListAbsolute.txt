@@ -1,0 +1,5 @@
+C:\Users\nat_h\Desktop\AdventOfCode\bin\Debug\ConsoleApplication.exe
+C:\Users\nat_h\Desktop\AdventOfCode\bin\Debug\ConsoleApplication.pdb
+C:\Users\nat_h\Desktop\AdventOfCode\obj\x86\Debug\AdventofCode.csproj.CoreCompileInputs.cache
+C:\Users\nat_h\Desktop\AdventOfCode\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\nat_h\Desktop\AdventOfCode\obj\x86\Debug\ConsoleApplication.pdb
