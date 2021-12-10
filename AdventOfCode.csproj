@@ -98,10 +98,8 @@
     <Compile Include="Puzzle05\Puzzle5Solver.cs" />
     <Compile Include="Puzzle06\Puzzle6bSolver.cs" />
     <Compile Include="Puzzle06\Puzzle6Solver.cs" />
-    <Compile Include="Puzzle7\Bag.cs" />
-    <Compile Include="Puzzle7\Puzzle7bSolver.cs" />
-    <Compile Include="Puzzle7\Puzzle7Solver.cs" />
-    <Compile Include="Puzzle7\RulesParser.cs" />
+    <Compile Include="Puzzle07\Puzzle7bSolver.cs" />
+    <Compile Include="Puzzle07\Puzzle7Solver.cs" />
     <Compile Include="Puzzle8\InstructionCounter.cs" />
     <Compile Include="Puzzle8\Puzzle8bSolver.cs" />
     <Compile Include="Puzzle8\Puzzle8Solver.cs" />
@@ -116,6 +114,7 @@
     <Content Include="puzzle4.txt" />
     <Content Include="puzzle5.txt" />
     <Content Include="puzzle6.txt" />
+    <Content Include="puzzle7.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".vs\AdventOfCode\v15\.suo" />

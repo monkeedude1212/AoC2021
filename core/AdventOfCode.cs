@@ -9,7 +9,7 @@ namespace core
 {
     public class AdventOfCode
     {
-        const int PUZZLE_NUMBER = 6;
+        const int PUZZLE_NUMBER = 7;
         const bool PART_B = true;
 
         public static void Main()

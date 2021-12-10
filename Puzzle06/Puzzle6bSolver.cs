@@ -1,4 +1,5 @@
 ﻿using core;
+using System;
 using System.Collections.Generic;
 
 public class Puzzle6bSolver : PuzzleSolver
@@ -6,7 +7,7 @@ public class Puzzle6bSolver : PuzzleSolver
     public string SolvePuzzle(string[] data)
     {
         string[] timers = data[0].Split(',');
-        Dictionary<int, int> fishies = new Dictionary<int, int>();
+        Dictionary<Int64, Int64> fishies = new Dictionary<Int64, Int64>();
         foreach (string timer in timers)
         {
             int intTimer = int.Parse(timer);
@@ -21,15 +22,16 @@ public class Puzzle6bSolver : PuzzleSolver
 
         for (int i = 0; i < 256; i++)
         {
-            Dictionary<int, int> newFishies = new Dictionary<int, int>();
-            foreach (KeyValuePair<int, int> valuePair in fishies)
+            Dictionary<Int64, Int64> newFishies = new Dictionary<Int64, Int64>();
+            foreach (KeyValuePair<Int64, Int64> valuePair in fishies)
             {
+
                 if (valuePair.Key == 0)
                 {
                     newFishies.Add(8, valuePair.Value);
                     if (newFishies.ContainsKey(6))
                     {
-                        newFishies[6] = newFishies[6] + valuePair.Value;
+                        newFishies[6] += valuePair.Value;
                     } else
                     {
                         newFishies.Add(6, valuePair.Value);
@@ -38,7 +40,7 @@ public class Puzzle6bSolver : PuzzleSolver
                 {
                     if (newFishies.ContainsKey(valuePair.Key - 1))
                     {
-                        newFishies[valuePair.Key - 1] = newFishies[valuePair.Key - 1] + valuePair.Value;
+                        newFishies[valuePair.Key - 1] += + valuePair.Value;
                     }
                     else
                     {
@@ -47,11 +49,10 @@ public class Puzzle6bSolver : PuzzleSolver
                 }
             }
             fishies = newFishies;
-            System.GC.Collect();
         }
 
-        int fishSum = 0;
-        foreach(KeyValuePair<int,int> fishCategory in fishies)
+        Int64 fishSum = 0;
+        foreach(KeyValuePair<Int64, Int64> fishCategory in fishies)
         {
             fishSum += fishCategory.Value;
         }
